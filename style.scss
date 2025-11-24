@@ -14,7 +14,6 @@ body {
 
 main {
     width: 100%;
-    padding: 20px;
 
     .card {
         width: 100%;
@@ -25,19 +24,78 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 1.5rem 2rem;
         }
 
         .content {
-            margin-top: 20px;
+            // margin-top: 20px;
             display: flex;
 
             .left {
                 width: 20%;
+                height: 100vh;
+                align-items: center;
+
+                .font-grid {
+                    padding: 4rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    h5 {
+                        text-align: right;
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                    }
+
+                    .font-icon {
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 1.5rem;
+                        gap: 1rem;
+                        cursor: pointer;
+                        justify-content: flex-end;
+                    }
+                }
             }
 
             .right {
+                background-color: #1b1a1a;
                 width: 80%;
+                padding: 1rem;
 
+                .generate-grid {
+                    display: flex;
+                    width: 25rem;
+                    align-items: center;
+                    gap: 1.8rem;
+
+                    .menu {
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                        background-color: #323232;
+                        border-radius: 50%;
+                        padding: 0.6rem 0.7rem;
+                        margin: 0.2rem;
+                    }
+
+                    .generate {
+                        button {
+                            padding: 0.6rem 2.3rem;
+                            background-color: #323232;
+                            border: none;
+                            border-radius:2rem;
+                            color: #fffdfd;
+                            font-size: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+
+
+                }
+                .info{
+                    padding: 3rem 1rem;
+                }
             }
         }
     }
