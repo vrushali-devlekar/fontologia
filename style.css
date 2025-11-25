@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +16,12 @@ body {
 main {
   width: 100%;
 }
+main #filterPopup {
+  width: 100%;
+  display: hidden;
+  background-color: #333;
+  opacity: 0.1;
+}
 main .card {
   width: 100%;
   height: 100vh;
@@ -30,14 +37,15 @@ main .card .content {
 }
 main .card .content .left {
   width: 20%;
-  height: 100vh;
+  height: 60vh;
   align-items: center;
 }
 main .card .content .left .font-grid {
-  padding: 4rem 2rem;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  justify-content: space-evenly;
+  gap: 0.7rem;
 }
 main .card .content .left .font-grid h5 {
   text-align: right;
@@ -52,10 +60,23 @@ main .card .content .left .font-grid .font-icon {
   cursor: pointer;
   justify-content: flex-end;
 }
+main .card .content .left #left-font1 {
+  font-family: "Schibsted Grotesk", sans-serif;
+  padding-top: 7rem;
+}
+main .card .content .left #left-font2 {
+  font-family: "Laila", serif;
+  padding-top: 2rem;
+}
+main .card .content .left #left-font3 {
+  font-family: "Laila", serif;
+  padding-top: 3rem;
+}
 main .card .content .right {
   background-color: #1b1a1a;
   width: 80%;
   padding: 1rem;
+  height: 89vh;
 }
 main .card .content .right .generate-grid {
   display: flex;
@@ -81,5 +102,58 @@ main .card .content .right .generate-grid .generate button {
   cursor: pointer;
 }
 main .card .content .right .info {
-  padding: 3rem 1rem;
+  margin-top: 2rem;
+}
+main .card .content .right .info #h1 {
+  width: 80%;
+  height: 50px;
+  min-height: 90px;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 0.3rem;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  border: none;
+}
+main .card .content .right .info #h1.no-border {
+  border-color: transparent;
+}
+main .card .content .right .info #h2 {
+  width: 50%;
+  height: 30px;
+  min-height: 90px;
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.4;
+  padding: 0.3rem;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  border: none;
+}
+main .card .content .right .info #h2.no-border {
+  border-color: transparent;
+}
+main .card .content .right .info #h3 {
+  width: 80%;
+  min-height: 200px;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  padding: 0.3rem;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  border: none;
+}
+main .card .content .right .info #h3.no-border {
+  border-color: transparent;
 }/*# sourceMappingURL=style.css.map */

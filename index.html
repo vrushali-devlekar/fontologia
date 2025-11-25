@@ -12,6 +12,17 @@
   </head>
   <body>
     <main>
+      <!-- FILTER POPUP -->
+      <div id="filterPopup" class="popup">
+        <div class="popup-content">
+          <!-- title -->
+          <!-- search bar -->
+          <!-- weight boxes -->
+          <!-- italic / regular -->
+          <!-- preview grid -->
+          <!-- close btn -->
+        </div>
+      </div>
       <div class="card">
         <div class="navbar">
           <h3><i class="ri-search-line"></i></h3>
@@ -20,8 +31,26 @@
         </div>
         <div class="content">
           <div class="left">
-            <div class="font-grid">
-              <h5 class="ft-name">font-name</h5>
+            <div class="font-grid" id="left-font1">
+              <h5 class="ft-name">Schibsted</h5>
+              <div class="font-icon">
+                <h5 class="lock">
+                  <i class="ri-git-repository-private-fill"></i>
+                </h5>
+                <h5 class="filter"><i class="ri-equalizer-line"></i></h5>
+              </div>
+            </div>
+            <div class="font-grid" id="left-font2">
+              <h5 class="ft-name">Laila</h5>
+              <div class="font-icon">
+                <h5 class="lock">
+                  <i class="ri-git-repository-private-fill"></i>
+                </h5>
+                <h5 class="filter"><i class="ri-equalizer-line"></i></h5>
+              </div>
+            </div>
+            <div class="font-grid" id="left-font3">
+              <h5 class="ft-name">Laila</h5>
               <div class="font-icon">
                 <h5 class="lock">
                   <i class="ri-git-repository-private-fill"></i>
@@ -39,7 +68,13 @@
               </div>
             </div>
             <div class="info">
-              <h1>Fontologia made it simple</h1>
+              <textarea name="hello" id="h1">
+Fontologia made it simple</textarea
+              >
+              <textarea name="hello" id="h2">Hii there</textarea>
+              <textarea name="hello" id="h3">
+Click (Generate) to create a new font pairing, (Lock) to lock fonts that you want to keep, and (Edit) to choose a font manually. The text is editable, try replacing it with your company name or other copy.</textarea
+              >
             </div>
           </div>
         </div>
